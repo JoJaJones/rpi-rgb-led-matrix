@@ -199,7 +199,7 @@ public:
     int rotation = 0;
     while (!interrupt_received) {
       ++rotation;
-      usleep(15 * 1000);
+      usleep(100 * 1000);
       rotation %= 360;
       for (int x = min_rotate; x < max_rotate; ++x) {
         for (int y = min_rotate; y < max_rotate; ++y) {
